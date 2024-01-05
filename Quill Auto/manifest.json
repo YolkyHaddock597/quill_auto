@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Quill Auto",
+  "version": "1.0",
+  "description": "Automaticaly completes quill assignments. Use responsibly.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "activeTab",
+    "tabs",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/icon48.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icons/border-48.png"
+
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+  
+}
